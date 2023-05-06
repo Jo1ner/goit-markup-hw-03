@@ -12,6 +12,15 @@ body {
   background-color: #ffffff;
 }
 
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px dotted purple;
+}
+
 :root {
   --primary-text-color: #434455;
   --secondary-text-color: #2e2f42;
@@ -32,9 +41,53 @@ body {
 button {
   cursor: pointer;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 /* INDEX.HTML */
 
 /* HEADER */
+.page-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.page-header-container {
+  display: flex;
+  align-items: center;
+}
+
+.page-nav {
+  display: flex;
+  align-items: center;
+  column-gap: 76px;
+}
+
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
@@ -63,6 +116,12 @@ button {
   color: var(--secondary-text-color);
 }
 
+.menu {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+}
+
 .menu-link:hover,
 .menu-link:focus {
   color: var(--hover-color);
@@ -70,6 +129,13 @@ button {
 
 .contact {
   font-style: normal;
+  margin-left: auto;
+}
+
+.contact-list {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
 }
 
 .contact-link {
@@ -84,7 +150,7 @@ button {
 .contact-link:focus {
   color: var(--hover-color);
 }
-/* MAIN */
+/* ================= MAIN =============*/
 
 .hero {
   background-color: #2e2f42;
@@ -100,12 +166,15 @@ button {
 }
 
 .hero-btn {
+  min-width: 169px;
+  padding: 16px 32px;
+  border-radius: 4px;
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  display: flex;
-  align-items: center;
+  text-align: center;
   letter-spacing: 0.04em;
   color: var(--white-color);
 
@@ -117,7 +186,42 @@ button {
   background-color: var(--hover-color);
 }
 
+.section-benefits {
+  padding-top: 120px;
+}
+
+.section-benefits-list {
+  display: flex;
+  column-gap: 24px;
+}
+
+.benefits-subtitle {
+  margin-bottom: 8px;
+
+  text-align: left;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+
+.benefits-desc {
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.employees-list {
+  display: flex;
+  column-gap: 24px;
+}
+
 .heading-section {
+  margin-bottom: 72px;
+
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -126,7 +230,19 @@ button {
   color: var(--secondary-text-color);
 }
 
+.section-list {
+  display: flex;
+  column-gap: 24px;
+}
+
+.employees-list-img {
+  margin-bottom: 32px;
+}
+
 .subtitle {
+  margin-bottom: 8px;
+
+  text-align: center;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -134,6 +250,9 @@ button {
   color: var(--secondary-text-color);
 }
 .subtitle-desc {
+  margin-bottom: 32px;
+
+  text-align: center;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -145,6 +264,8 @@ button {
 }
 
 .section-cards-item {
+  flex-basis: calc((100%-72px) / 4);
+
   background-color: var(--white-color);
 }
 /* FOOTER */
@@ -154,12 +275,18 @@ button {
 }
 
 .slogan {
+  margin-top: 16px;
+  width: 264px;
+
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--light-mode);
 }
 .page-footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
   background-color: #2e2f42;
 }
 /* PORTFOLIO.HTML */
