@@ -94,8 +94,6 @@ img {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--accent-color);
@@ -292,7 +290,7 @@ img {
   color: #f4f4fd;
 }
 
-.logo.link {
+.footer-logo {
   display: inline-block;
   margin-bottom: 16px;
 }
@@ -364,8 +362,11 @@ img {
   row-gap: 48px;
 }
 
+.work-examples-list-item {
+  width: calc((100% - 48px) / 3);
+}
+
 .examples-subtitle {
-  padding-top: 32px;
   margin-bottom: 8px;
   text-align: left;
 }
@@ -373,10 +374,9 @@ img {
 .examples-subtitle-text {
   border: 1px solid #e7e9fc;
   border-top: none;
-  padding-left: 12px;
+  padding: 32px 16px;
 }
 
 .examples-subtitle-desc {
   text-align: left;
-  margin-bottom: 32px;
 }
