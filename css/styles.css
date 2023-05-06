@@ -85,10 +85,11 @@ img {
 .page-nav {
   display: flex;
   align-items: center;
-  column-gap: 76px;
 }
 
 .logo {
+  margin-right: 76px;
+
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -109,6 +110,8 @@ img {
 }
 
 .menu-link {
+  padding: 24px 0;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -119,7 +122,7 @@ img {
 .menu {
   display: flex;
   align-items: center;
-  column-gap: 40px;
+  gap: 40px;
 }
 
 .menu-link:hover,
@@ -135,7 +138,7 @@ img {
 .contact-list {
   display: flex;
   align-items: center;
-  column-gap: 40px;
+  gap: 40px;
 }
 
 .contact-link {
@@ -160,7 +163,7 @@ img {
 
 .hero-title {
   margin-bottom: 48px;
-  width: 496px;
+  max-width: 496px;
   margin-left: auto;
   margin-right: auto;
 
@@ -177,8 +180,10 @@ img {
   margin-right: auto;
   margin-left: auto;
   min-width: 169px;
+  height: 56px;
   padding: 16px 32px;
   border-radius: 4px;
+  border: none;
 
   font-family: inherit;
   font-weight: 500;
@@ -198,11 +203,15 @@ img {
 
 .section-benefits {
   padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .section-benefits-list {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
+}
+.benefits-list-item {
+  width: calc((100% - 72px) / 4);
 }
 
 .benefits-subtitle {
@@ -226,7 +235,7 @@ img {
 
 .employees-list {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
 }
 
 .heading-section {
@@ -242,11 +251,11 @@ img {
 
 .section-list {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
 }
 
-.employees-list-img {
-  margin-bottom: 32px;
+.employees-list-text {
+  padding: 32px 16px;
 }
 
 .subtitle {
@@ -260,8 +269,6 @@ img {
   color: var(--secondary-text-color);
 }
 .subtitle-desc {
-  margin-bottom: 32px;
-
   text-align: center;
   font-size: 16px;
   line-height: 1.5;
@@ -274,6 +281,7 @@ img {
 }
 
 .section-cards-item {
+  border-radius: 0px 0px 4px 4px;
   flex-basis: calc((100%-72px) / 4);
 
   background-color: var(--white-color);
@@ -284,8 +292,11 @@ img {
   color: #f4f4fd;
 }
 
+.logo.link {
+  display: inline-block;
+  margin-bottom: 16px;
+}
 .slogan {
-  margin-top: 16px;
   width: 264px;
 
   font-size: 16px;
@@ -301,7 +312,7 @@ img {
 }
 /* ==================  PORTFOLIO.HTML ================= */
 
-.page-main {
+.main-section {
   padding-bottom: 120px;
   padding-top: 96px;
 }
@@ -309,7 +320,7 @@ img {
 .filter-btn-list {
   display: flex;
   justify-content: center;
-  column-gap: 24px;
+  gap: 24px;
   margin-bottom: 72px;
 }
 
@@ -332,6 +343,8 @@ img {
 
 .filter-btn:hover,
 .filter-btn:focus {
+  border: 1px solid transparent;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
